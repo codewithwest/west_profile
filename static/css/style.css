@@ -4,6 +4,7 @@
     box-sizing: border-box;
     height: 100%;
     width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 :root{
@@ -39,9 +40,7 @@
     display: flex;
     text-decoration: none;
     color: inherit;
-    margin: auto;
-    
-   
+    margin: auto; 
 }
 .navCont ul li:hover {
     font-size: 1.2rem;
@@ -53,7 +52,7 @@
 
 .profileIntroCont{
     width: 85%;
-    height: 30%;
+    height: 35%;
     display: flex;
     margin: 0% auto;
     margin-top: 5%;
@@ -66,20 +65,20 @@
      
 }
 .profileImageCont .profileImage{
-    height: 80%;
+    height: 90%;
     width: 90%;
     margin: auto;
     background-image: url('../assets/profile.jpg');
     background-size: cover;
     opacity: .95;
     background-repeat: no-repeat;
-    background-position: center;
-    background-position-y: 10%;
+    background-position: 60%;
+    background-position-y: 15%;
     box-shadow: 1.4px 1.4px rgba(220, 217, 217, 0.2),-1.3px -1.3px rgba(220, 217, 217, 0.2);
 }
 .profileDescCont{
-    border: 1px solid red;
-    width: 70%;
+   
+    width: 80%;
     height: 100%;
 }
 
@@ -100,9 +99,9 @@
 .techStacks img{
     height: 80%;
     border: none;
-    width: calc(100%/15);
-    box-shadow: .34px .34px rgba(220, 217, 217, 0.2),
-    -.34px -.34px rgba(220, 217, 217, 0.2);
+    width: calc(100%/16);
+    /* box-shadow: .34px .34px rgba(220, 217, 217, 0.2),
+    -.34px -.34px rgba(220, 217, 217, 0.2); */
     margin: auto;
     border-radius: 20%;
 }
@@ -117,11 +116,13 @@
     flex-direction: column;
 }
 .projectsDisplay{
-    
+    margin-top: 10%;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 40%;
 }
 
 .projectBox{
@@ -140,46 +141,61 @@
     position: absolute;
     display: flex;
     flex-direction: column;
+    padding: 1%;
     height: 30%;
     width: 35%;
     margin-top: 20%;
     margin-left: 2.5%;
-    background: rgba(12, 9, 9, 0.8);
-    box-shadow: 2px 2px .8px rgba(220, 217, 217, 0.2),
-    -2px -2px .8px rgba(220, 217, 217, 0.2);
+    background: rgba(2, 2, 2, 0.9);
+    box-shadow: 1px 1px .8px rgba(220, 217, 217, 0.2),
+    -1px -1px .8px rgba(220, 217, 217, 0.2);
 
 }
 .projectName{
     display: flex;
-    height: 25%;
-    width: auto;
+    height: 20%;
     width: 100%;
 }
 .projectName p{
     display: flex;
-    margin: 0 auto;
+    margin: auto auto;
+    width: fit-content;
+    height: fit-content;
     font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .projectDesc{
     display: flex;
     height: 60%;
     width: 100%;
-    padding: 5%;
+    padding: 6%;
+    font-size: .85rem;
+    overflow-y: hidden;
+    white-space: wrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
 }
 
 .projectLinks{
     height: 15%;
     width: 60%;
     display: flex;
-    margin: auto;
+    margin: 0 auto;
 }
 
-.projectLinks img{
-    height: 80%;
+.projectLinks a {
+    height: 70%;
     width: 90%;
+    margin: auto;
+    display: flex;
+}
+.projectLinks img{
+    width: 50%;
+    height: 80%;
+    background: rgba(84, 83, 83, 0.8);
+    margin: auto;
     border-radius: 10%;
-
 
 }
 .profileDesc p {
@@ -187,15 +203,22 @@
 }
 
 .projectTechStacks{
-    width: 100%;
+    
+    width: fit-content;
     height: 20%;
     display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+   
     
 }
 .projectTechStacks img{
+    border: .1px solid rgba(220, 217, 217, 0.2);
+    background: rgba(84, 83, 83, 0.2);
     height: 80%;
-    margin: auto;
-    width: calc(100%/6);
+   margin: auto;
+   margin-right: 3%;
+    min-width: calc(100%/5);
     border-radius: 15%;
 }
 
