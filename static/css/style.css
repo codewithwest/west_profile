@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+:root{
+    background: rgba( 12,12,12,.9);
+    color: #fff;
+}
+
+
+/* Nav Bar Style */
+.navCont{
+    display: flex;
+    width: 100%;
+    height: 15%;
+    min-height: 80px;
+}
+.navCont ul{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    height: 75%;
+    list-style: none;
+}
+.navCont ul li{
+    width: calc(100%/3);
+    height: 100%;
+    display: flex;
+    animation-delay: all 7s;
+   box-shadow: .3px .3px rgba(220, 217, 217, 0.2),-.3px -.3px rgba(220, 217, 217, 0.2);
+}
+.navCont ul li a{
+    height: auto;
+    width: auto;
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+    margin: auto;
+    
+   
+}
+.navCont ul li:hover {
+    font-size: 1.2rem;
+    background: rgba(64, 64, 64, 0.2);
+
+}
+
+/* Intro Start */
+
+.profileIntroCont{
+    width: 85%;
+    height: 30%;
+    display: flex;
+    margin: 0% auto;
+    margin-top: 5%;
+    box-shadow: .4px .4px rgba(220, 217, 217, 0.2),-.3px -.3px rgba(220, 217, 217, 0.2);
+}
+.profileImageCont{
+    width: 30%;
+    height: 100%;
+    display: flex;
+     
+}
+.profileImageCont .profileImage{
+    height: 80%;
+    width: 90%;
+    margin: auto;
+    background-image: url('../assets/profile.jpg');
+    background-size: cover;
+    opacity: .95;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 10%;
+    box-shadow: 1.4px 1.4px rgba(220, 217, 217, 0.2),-1.3px -1.3px rgba(220, 217, 217, 0.2);
+}
+.profileDescCont{
+    border: 1px solid red;
+    width: 70%;
+    height: 100%;
+}
+
+.profileDesc{
+    height: 80%;
+    display: flex;
+    width: 100%;
+}
+.profileDesc p{
+    margin: 5%;
+}
+.techStacks{
+    display: flex;
+    height: 20%;
+    /* width: 20%; */
+    overflow-x: auto;
+}
+.techStacks img{
+    height: 80%;
+    border: none;
+    width: calc(100%/15);
+    box-shadow: .34px .34px rgba(220, 217, 217, 0.2),
+    -.34px -.34px rgba(220, 217, 217, 0.2);
+    margin: auto;
+    border-radius: 20%;
+}
+
+/* Intro End */
+
+
+/* Projects Display */
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+.projectsDisplay{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.projectBox{
+    box-shadow: 1px 1px rgba(220, 217, 217, 0.2),
+    -1px -1px rgba(220, 217, 217, 0.2);
+    height: 50%;
+    width: 40%;
+    margin: auto;
+    background: url('../assets/background.png');
+    background-position: center;
+    background-size: cover;
+    z-index: 200;
+    animation: all 5s;
+}
+.projectInfo{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 35%;
+    margin-top: 20%;
+    margin-left: 2.5%;
+    background: rgba(12, 9, 9, 0.8);
+    box-shadow: 2px 2px .8px rgba(220, 217, 217, 0.2),
+    -2px -2px .8px rgba(220, 217, 217, 0.2);
+
+}
+.projectName{
+    display: flex;
+    height: 25%;
+    width: auto;
+    width: 100%;
+}
+.projectName p{
+    display: flex;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+.projectDesc{
+    display: flex;
+    height: 60%;
+    width: 100%;
+    padding: 5%;
+}
+
+.projectLinks{
+    height: 15%;
+    width: 60%;
+    display: flex;
+    margin: auto;
+}
+
+.projectLinks img{
+    height: 80%;
+    width: 90%;
+    border-radius: 10%;
+
+
+}
+.profileDesc p {
+    font-size: .9rem;
+}
+
+.projectTechStacks{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    
+}
+.projectTechStacks img{
+    height: 80%;
+    margin: auto;
+    width: calc(100%/6);
+    border-radius: 15%;
+}
+
+
+@media only screen and (min-width:800px){
+    .profileIntroCont{
+        height: 150%;
+    }
+    .projectsDisplay{
+        margin-top: 3%;
+    }
+    .projectBox{
+       
+        height: 170%;
+    }
+    .projectInfo{
+        margin-top: 15%;
+        height: 55%;
+    }
+
+}
