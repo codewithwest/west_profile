@@ -11,6 +11,7 @@
   display: flex;
   width: 90%;
   height: 40%;
+  min-height: auto;
   box-shadow: 0 2px rgba(91, 91, 91, 0.8);
   margin: 0 auto;
 }
@@ -24,14 +25,20 @@
 }
 
 .projectCover{
+  display: flex;
+  flex-direction: column;
   height: 90%;
   width: 30%;
   margin: auto 0;
-  background-position: center;
-  background-size: cover;
   box-shadow: 1px 1px rgba(91, 91, 91, 0.8),
   -1px -1px rgba(91, 91, 91, 0.8);
+  overflow: hidden;
 }
+.projectCover img {
+  height: auto;
+  width: 100%;
+}
+
 .projectCard .projectTitle{
   display: flex;
   height: 20%;
@@ -77,6 +84,31 @@
   
   height: 100%;
   width: 100%;
+}
+
+.projectCoversBtns{
+  position: absolute;
+  height: 7%;
+  margin-top: 28%;
+  margin-left: 3.5%;
+  width: 20%;
+  display: flex;
+}
+.projectCoversBtns button{
+  position: relative;
+  margin: auto;
+  width: 20%;
+  height: 60%;
+  font-size: large;
+  color: #fff;
+  font-weight: bolder;
+  background: none;
+  border: none;
+
+}
+.projectCoversBtns button:hover{
+  background: rgba(91, 91, 91, 0.8);
+  border-radius: 20%;
 }
 
 @media only screen and (min-width:800px){
