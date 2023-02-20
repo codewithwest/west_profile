@@ -3,4 +3,90 @@
 .projects {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
+
+.projectCard{
+  display: flex;
+  width: 90%;
+  height: 40%;
+  box-shadow: 0 2px rgba(91, 91, 91, 0.8);
+  margin: 0 auto;
+}
+
+.projectCard .projectText{
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 90%;
+  margin: auto 0;
+}
+
+.projectCover{
+  height: 90%;
+  width: 30%;
+  margin: auto 0;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 1px 1px rgba(91, 91, 91, 0.8),
+  -1px -1px rgba(91, 91, 91, 0.8);
+}
+.projectCard .projectTitle{
+  display: flex;
+  height: 20%;
+  font-size: 1.3rem;
+}
+.projectCard .projectTitle p{
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+
+
+.projectCard .projectLayOut{
+  padding:2%;
+  font-weight: lighter;
+  font-family:'Courier New', Courier, monospace;
+}
+.projectCard .projectLocal{
+  display: flex;
+  width: 100%;
+  height: 20%;
+}
+
+.projectLocal .projectSites{
+  display: flex;
+  width: 40%;
+  height: 100%;
+}
+.projectLocal .proTechStacks{
+  display: flex;
+  width: 60%;
+  height: 100%;
+}
+.projectCard .projectLocal a{
+  display: flex;
+  width: 15%;
+  height: 80%;
+  border-radius: 10%;
+  margin: auto 1%;
+  background: rgba(254, 252, 252, 0.516);
+}
+.projectLocal img{
+  
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (min-width:800px){
+  .projects{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .projectCard{
+    height: 50%;
+  }
+}
+
+

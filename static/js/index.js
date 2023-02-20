@@ -13,9 +13,7 @@ let homeCont =   await fetch(`./static/views/home.html`).
     then((c)=> c.text()).
     catch(e=>e)
 
-if (currentUrl == 'http://127.0.0.1:5500/index.html'){
-    content.innerHTML = homeCont
-}
+
 
 let projectCont = await fetch(`./static/views/projects.html`).
 then((c)=> c.text()).
@@ -25,6 +23,9 @@ let aboutCont = await fetch(`./static/views/about.html`).
 then((c)=> c.text()).
 catch(e=>e)
 
+if (currentUrl == 'http://127.0.0.1:5500/index.html'){
+    content.innerHTML = projectCont
+}
 homeLink.addEventListener('click',(e)=>{
     e.preventDefault()
     content.innerHTML = ""
