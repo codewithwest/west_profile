@@ -148,7 +148,6 @@
     height: 60%;
     width: 40%;
     margin: auto;
-   
     background-position: center;
     background-size: 100%;
     background-position-y: 0%;
@@ -279,4 +278,45 @@
     .content{
         margin-bottom: 50%;
     }
+}
+
+@media only screen and (max-width:450px){
+    *{
+        font-size: .7rem;
+    }
+    .navCont{
+        height: 2%;
+    }
+    .navCont ul{
+        display: flex;
+        width: 60%;
+        margin: auto;
+        height: 50%;
+    }
+    .projectsDisplay{
+        margin-top: 0;
+        row-gap: 0%;
+        height: 55%;
+    }
+    .profileIntroCont{
+        height: 19%;
+    }
+    .projectsDisplay{
+        margin-top: 0%;
+    }
+    .projectBox{
+        margin-top: 10%;
+        height: 30%;
+    }
+    .projectInfo{
+        margin-top: 15%;
+        height: 14%;
+    }
+    .profileDesc p {
+        font-size: .64rem;
+    }
+    .projectInfo p {
+        font-size: .58rem;
+    }
+
 }

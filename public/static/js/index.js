@@ -22,13 +22,14 @@ let aboutCont = await fetch(`./static/views/about.html`).
     then((c) => c.text()).
     catch(e => e)
 console.log()
+if (window.location == 'http://127.0.0.1:5500/public/index.html') {
+    content.innerHTML = projectCont
+}
 if (window.location.pathname == '/') {
     content.innerHTML = homeCont
     homeLink.style.background="rgba(22,22,22)"
     projectLink.style.background="inherit"
     aboutLink.style.background="inherit"
-
-
 }
 homeLink.addEventListener('click', (e) => {
     e.preventDefault()
