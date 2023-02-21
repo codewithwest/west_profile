@@ -21,42 +21,44 @@ let projectCont = await fetch(`./static/views/projects.html`).
 let aboutCont = await fetch(`./static/views/about.html`).
     then((c) => c.text()).
     catch(e => e)
+console.log()
+if (window.location.pathname == '/') {
+    content.innerHTML = homeCont
+    homeLink.style.background="rgba(22,22,22)"
+    projectLink.style.background="inherit"
+    aboutLink.style.background="inherit"
 
-if (currentUrl == 'http://127.0.0.1:5500/index.html') {
-    content.innerHTML = projectCont
 
 }
 homeLink.addEventListener('click', (e) => {
     e.preventDefault()
     content.innerHTML = ""
     content.innerHTML = homeCont
+    homeLink.style.background="rgba(22,22,22)"
+    projectLink.style.background="inherit"
+    aboutLink.style.background="inherit"
 })
 
 projectLink.addEventListener('click', (e) => {
     e.preventDefault()
     content.innerHTML = ""
     content.innerHTML = projectCont
+    window.location.pathname =window.location.pathname +"projects"
+    
+    projectLink.style.background="rgba(22,22,22)"
+    homeLink.style.background="inherit"
+    aboutLink.style.background="inherit"
 })
 aboutLink.addEventListener('click', (e) => {
     e.preventDefault()
     content.innerHTML = ""
     content.innerHTML = aboutCont
+    homeLink.style.background="inherit"
+    projectLink.style.background="inherit"
+    aboutLink.style.background="rgba(22,22,22)"
 })
-var reversedPic = 0;
-function leftBtnClick(targetImg, targetCount,highestCount) {
-    let img = document.getElementById(targetImg)
-    if (targetCount < highestCount) {
-        img.setAttribute('src',`./static/assets/projects/flutterWD/flutter${reversedPic}.png`)
-        reversedPic = targetCount+1
-        console.log(targetCount)
-    }
-    else{
-        reversedPic = targetCount = 0
-    }
-}
 
-var leftBtn = document.getElementById('change_right0')
-leftBtn.addEventListener('click',(e)=>{
-    e.preventDefault()
-    leftBtnClick('pcImg0', reversedPic,7)
-})
+// Images auto-change
+
+
+

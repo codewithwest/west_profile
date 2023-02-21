@@ -27,7 +27,8 @@
 .projectCover{
   display: flex;
   flex-direction: column;
-  height: 90%;
+  height: auto;
+  max-height: 90%;
   width: 30%;
   margin: auto 0;
   box-shadow: 1px 1px rgba(91, 91, 91, 0.8),
@@ -37,6 +38,8 @@
 .projectCover img {
   height: auto;
   width: 100%;
+  margin: auto;
+  
 }
 
 .projectCard .projectTitle{
@@ -87,12 +90,13 @@
 }
 
 .projectCoversBtns{
+  display: none;
   position: absolute;
   height: 7%;
   margin-top: 28%;
   margin-left: 3.5%;
   width: 20%;
-  display: flex;
+  
 }
 .projectCoversBtns button{
   position: relative;

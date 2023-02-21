@@ -32,18 +32,20 @@
     display: flex;
     text-decoration: none;
     color: inherit;
-    animation-delay: all 7s;
+    background: inherit;
     box-shadow: .3px .3px rgba(220, 217, 217, 0.2),-.3px -.3px rgba(220, 217, 217, 0.2);
 }
+.navCont ul a:hover {
+   font-weight: 800;
+    font-size: 1.15rem;
+    
+}
+
 .navCont ul a p {
     display: flex;
     margin: auto; 
     height: auto;
     width: auto;
-}
-.navCont ul a:hover {
-    font-size: 1.2rem;
-    background: rgba(64, 64, 64, 0.2);
 }
 
 /* Intro Start */
@@ -62,7 +64,6 @@
     width: 30%;
     height: 100%;
     display: flex;
-     
 }
 .profileImageCont .profileImage{
     height: 90%;
@@ -128,6 +129,7 @@
 .content{
     display: flex;
     flex-direction: column;
+    
 }
 .projectsDisplay{
     margin-top: 10%;
@@ -214,7 +216,7 @@
 .projectLinks img{
     width: 50%;
     height: 70%;
-    background: rgba(209, 209, 209, 0.3);
+    background: rgb(229, 229, 229);
     margin: auto auto;
     border-radius: 10%;
 }
@@ -240,16 +242,16 @@
 
 /* Home projects Background */
 .projectBox0{
-    background-image: url('../assets/reversed.png');
+    background-image: url('../assets/projects/reversed/reversed.png');
 }
 .projectBox1{
-    background-image: url('../assets/weSkate.png');
+    background-image: url('../assets//projects/weSkate/weSkate.png');
 }
 .projectBox2{
-    background-image: url('../assets/connex.png');
+    background-image: url('../assets/projects/connex/connex.png');
 }
 .projectBox3{
-    background-image: url('../assets/aihub.png');
+    background-image: url('../assets/projects/AiHub/aihub.png');
 }
 
 
@@ -273,5 +275,8 @@
     }
     .projectInfo p {
         font-size: 1.5rem;
+    }
+    .content{
+        margin-bottom: 50%;
     }
 }
