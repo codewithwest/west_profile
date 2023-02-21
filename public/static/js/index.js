@@ -43,7 +43,6 @@ projectLink.addEventListener('click', (e) => {
     e.preventDefault()
     content.innerHTML = ""
     content.innerHTML = projectCont
-    window.location.pathname =window.location.pathname +"projects"
     
     projectLink.style.background="rgba(22,22,22)"
     homeLink.style.background="inherit"
