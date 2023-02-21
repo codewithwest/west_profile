@@ -45,7 +45,7 @@
 .projectCard .projectTitle{
   display: flex;
   height: 20%;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 .projectCard .projectTitle p{
   height: auto;
@@ -122,9 +122,14 @@
   .projectCard{
     height: 50%;
   }
+  .projects .projectTitle{
+    font-size: 1.8rem;
+  }
+   .projects .projectText{
+    font-size: 1.2rem;
+  }
 }
 @media only screen and (max-width:450px){
-  
   .projects{
     font-size: .4rem;
     width: 98%;
