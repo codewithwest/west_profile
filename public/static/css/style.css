@@ -206,7 +206,6 @@
 
 .projectLinks a {
     height: 100%;
-    
     width: 100%;
     margin: auto;
     display: flex;
@@ -226,7 +225,6 @@
     display: flex;
     margin: 0 auto;
     justify-content: space-between;
-   
     
 }
 .projectTechStacks img{
@@ -282,10 +280,12 @@
 
 @media only screen and (max-width:450px){
     *{
-        font-size: 5.5rem;
+        font-size: .56rem;
     }
     .navCont{
+
         height: 2%;
+        
     }
     .navCont ul{
         display: flex;
@@ -311,10 +311,11 @@
     .projectInfo{
         margin-top: 15%;
         height: 14%;
+        
     }
 
     .projectInfo p {
-        font-size: .48rem;
+        font-size: .7rem;
     }
 
 }

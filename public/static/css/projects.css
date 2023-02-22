@@ -132,7 +132,14 @@
   }
   .projectCard{
     height: 20%;
+    
   }
+  .projectCard .projectTitle{
+    display: flex;
+    height: 20%;
+    font-size: 1.1rem;
+  }
+
 }
 
 
