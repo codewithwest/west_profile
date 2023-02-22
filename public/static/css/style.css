@@ -301,6 +301,12 @@
     .navCont ul a p {
         font-size: 1.04rem;
     }
+    .profileDesc span{
+        font-size: inherit;
+    }
+    .profileDesc p a{
+        font-size: inherit;
+    }
     .projectsDisplay{
         margin-top: 0;
         row-gap: 0%;
