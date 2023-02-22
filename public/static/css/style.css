@@ -253,6 +253,10 @@
 
 
 @media only screen and (min-width:800px){
+    .navCont ul{
+        height: 100%;
+    }
+    
     .profileIntroCont{
         height: 150%;
     }
