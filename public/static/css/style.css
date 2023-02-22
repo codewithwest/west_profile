@@ -42,6 +42,7 @@
 }
 
 .navCont ul a p {
+    font-size: .9rem;
     display: flex;
     margin: auto; 
     height: auto;
@@ -297,6 +298,9 @@
         margin: auto;
         height: 50%;
     }
+    .navCont ul a p {
+        font-size: 1.04rem;
+    }
     .projectsDisplay{
         margin-top: 0;
         row-gap: 0%;
@@ -319,7 +323,7 @@
     }
 
     .projectInfo p {
-        font-size: .7rem;
+        font-size: .65rem;
     }
 
 }

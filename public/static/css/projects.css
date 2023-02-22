@@ -131,7 +131,7 @@
 }
 @media only screen and (max-width:450px){
   .projects{
-    font-size: .4rem;
+    font-size: .76rem;
     width: 98%;
     margin: 0 auto;
   }
@@ -139,10 +139,9 @@
     height: 20%;
     
   }
-  .projectCard .projectTitle{
-    display: flex;
-    height: 20%;
-    font-size: 1.1rem;
+
+   .projects .projectText p{
+    font-size: .8rem;
   }
 
 }
